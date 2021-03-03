@@ -100,10 +100,10 @@
 
   </appender>
 
-  <logger name="play" level="INFO" />
-  <logger name="defaultLoggerAppender" level="INFO" />
+  <logger name="play" level="DEBUG" />
+  <logger name="defaultLoggerAppender" level="DEBUG" />
   <!-- Telemetry Loggers-->
-  <logger name="TelemetryEventLogger" level="INFO">
+  <logger name="TelemetryEventLogger" level="DEBUG">
     <appender-ref ref="kafka-appender" />
   </logger>
 
@@ -111,11 +111,11 @@
     <appender-ref ref="defaultLoggerAppender" />
   </logger>
 
-  <logger name="org.sunbird" level="INFO">
+  <logger name="org.sunbird" level="DEBUG">
     <appender-ref ref="defaultLoggerAppender" />
   </logger>
 
-  <root level="INFO">
+  <root level="DEBUG">
     <appender-ref ref="ASYNCSTDOUT" />
   </root>
 
